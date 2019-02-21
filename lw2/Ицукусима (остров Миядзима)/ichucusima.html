@@ -16,8 +16,8 @@
 	</header>
 
 
-	<div class="gr">
-		<div class="all">
+	<div class="container">
+		<div class="sldr">
 			<input checked type="radio" name="respond" id="desktop">
 			<article id="slider">
 				<input checked type="radio" name="slider" id="switch1">
@@ -61,7 +61,7 @@
 
 
 
-		<div class="gr2">
+		<div>
 			<h2>Святилище Ицукусима считается национальным сокровищем Японии. Старинная синтоистская святыня находится во Внутреннем Японском
 				море, на острове Ицукусима (более известном как остров Миядзима), в окружении зеленых гор и заливов. И именно из-за богатой
 				природы вокруг, а также своей давней истории (ведь возникла святыня еще задолго до нашей эры ), Ицукусима и стала местом
@@ -74,22 +74,39 @@
 	</div>
 
 	<div class="form-comments">
-		<div>
-			<label for="example_name">Наименование</label>
+		<div class="form">
+			<label for="example_name">
+				<h3>Наименование</h3>
+			</label>
 			<input type="name" placeholder="Ваше имя">
-			<label for="example_comments">Оставить комментарий</label>
+			<label for="example_comments">
+				<h3>Оставить комментарий</h3>
+			</label>
 			<textarea name="comment" id="comment" cols="100" rows="10" placeholder="Ваш комментарий"></textarea>
-			<label for="example_name">Оставить ссылку на соц. сети</label>
+			<label for="example_name">
+				<h3>Оставить ссылку на соц. сети</h3>
+			</label>
 			<input type="text" placeholder="Ваша ссылка">
 			<button type="submit">Отправить</button>
 		</div>
-		<div class="comment">
-			<textarea name="comment" id="text-comment" cols="30" rows="20">
-					Алеша
-					Всё супер отличный сайт!!!
-					Василий
-					Хорошо ознакомился с маршрутом, спасибо!!!
-			</textarea>
+		<div id="comments">
+			<strong>Алексей</strong>
+			<a href="#">Соц.сеть</a>
+			<div class="post1">Отличный сайт всем советую!!!</div>
+			<br>
+			<br>
+
+			<strong>Василий</strong>
+			<a href="#">Соц.сеть</a>
+			<div class="post2">Я доволен этим сайтом!!!</div>
+			<br>
+			<br>
+
+			<strong>Артур</strong>
+			<a href="#">Соц.сеть</a>
+			<div class="post3">Хороший выбор красивых мест!!!</div>
+			<br>
+			<br>
 		</div>
 	</div>
 	<div class="proezd">
@@ -102,7 +119,7 @@
 	<script type="text/javascript">(function () {
 			if (window.pluso) if (typeof window.pluso.start == "function") return;
 			if (window.ifpluso == undefined) {
-			window.ifpluso = 1;
+				window.ifpluso = 1;
 				var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
 				s.type = 'text/javascript'; s.charset = 'UTF-8'; s.async = true;
 				s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';

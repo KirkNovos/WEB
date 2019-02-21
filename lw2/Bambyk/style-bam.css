@@ -9,7 +9,30 @@ body{
 	text-align: center;
 }
 
+#comments{
+	background-color: white;
+	width: 660px;
+	padding: 20px;
+}
 
+.post1{
+	min-height: 50px;
+    width: 555px;
+    padding-top: 7px;
+    padding-left: 20px;
+}
+.post2{
+		min-height: 50px;
+			width: 555px;
+			padding-top: 7px;
+			padding-left: 20px;
+}
+.post3{
+	min-height: 50px;
+		width: 555px;
+		padding-top: 7px;
+		padding-left: 20px;
+}
 
 
 .form-comments{
@@ -17,6 +40,11 @@ body{
     grid-template-columns: auto auto;
 	grid-column-gap: 20px;
 	padding: 0 0 0 50px;
+}
+
+.form{
+	background-color: #777;
+	padding: 10px;
 }
 
 .form-comments label{
@@ -34,14 +62,14 @@ body{
 }
 
 
-.gr{
+.container{
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-column-gap: 100px;
 	padding: 0 0 30px 0;
 }
 
-.all{
+.sldr{
 	padding: 0 0 0 100px;
 }
 
@@ -111,7 +139,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	cursor: pointer;
 }
 
-.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+.sldr input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
 	display: none;
 }
 

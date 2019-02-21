@@ -16,8 +16,8 @@
 	</header>
 
 
-	<div class="gr">
-		<div class="all">
+	<div class="container">
+		<div class="sldr">
 			<input checked type="radio" name="respond" id="desktop">
 			<article id="slider">
 				<input checked type="radio" name="slider" id="switch1">
@@ -61,39 +61,58 @@
 
 
 
-		<div class="gr2">
-
+		<div>
 			<h2>Гуляя здесь, вы практически не видите неба — такие высокие деревья, — но ту атмосферу покоя и умиротворения, которые они
 				дарят, невозможно передать. Парк достаточно большой, площадь пешеходных аллей — более 17 км2. Особенно красив он по вечерам
 				и ночью, когда бамбуковые заросли подсвечивают сотнями огней. По одну из сторон Сагано расположен буддистский храм Тэнрю-дзи,
 				а на другой — живописный сад у пруда Соджен, из которого открываются виды на гору Аросияма. Весь ансамбль внесен в Список
 				культурного наследия ЮНЕСКО.
 			</h2>
-
 		</div>
 	</div>
 
+
+
 	<div class="form-comments">
-		<div>
+		<div class="form">
 			<label for="example_name">
 				<h3>Наименование</h3>
 			</label>
 			<input type="name" placeholder="Ваше имя">
-			<label for="example_comments">Оставить комментарий</label>
+			<label for="example_comments">
+				<h3>Оставить комментарий</h3>
+			</label>
 			<textarea name="comment" id="comment" cols="100" rows="10" placeholder="Ваш комментарий"></textarea>
-			<label for="example_name">Оставить ссылку на соц. сети</label>
+			<label for="example_name">
+				<h3>Оставить ссылку на соц. сети</h3>
+			</label>
 			<input type="text" placeholder="Ваша ссылка">
 			<button type="submit">Отправить</button>
 		</div>
-		<div class="comment">
-			<textarea name="comment" id="text-comment" cols="30" rows="20">
-					Алеша
-					Всё супер отличный сайт!!!
-					Василий
-					Хорошо ознакомился с маршрутом, спасибо!!!
-			</textarea>
+		<div id="comments">
+			<strong>Алексей</strong>
+			<a href="#">Соц.сеть</a>
+			<div class="post1">Отличный сайт всем советую!!!</div>
+			<br>
+			<br>
+
+			<strong>Василий</strong>
+			<a href="#">Соц.сеть</a>
+			<div class="post2">Хороший выбор мест!!!</div>
+			<br>
+			<br>
+
+			<strong>Артур</strong>
+			<a href="#">Соц.сеть</a>
+			<div class="post3">Я доволен этим сайтом!!!</div>
+			<br>
+			<br>
 		</div>
 	</div>
+
+
+
+
 	<div class="proezd">
 		<h2>Как проехать!!!</h2>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.4041498529305!2d135.67065054948267!3d35.021618019265354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001aa1c8bbf9e89%3A0x7a9ee1d23c5098e9!2sSagano!5e0!3m2!1sru!2sru!4v1550608602876"
@@ -103,7 +122,7 @@
 	<script type="text/javascript">(function () {
 			if (window.pluso) if (typeof window.pluso.start == "function") return;
 			if (window.ifpluso == undefined) {
-			window.ifpluso = 1;
+				window.ifpluso = 1;
 				var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
 				s.type = 'text/javascript'; s.charset = 'UTF-8'; s.async = true;
 				s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
