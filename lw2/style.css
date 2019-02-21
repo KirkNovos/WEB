@@ -1,0 +1,52 @@
+body{
+    background-image: url("img/background-japan.jpg");
+    font-family: 'El Messiri', sans-serif;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+header{
+    width: 100%;
+}
+.header_logo{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 0 0;
+}
+.header_logo h1{
+    color: black;
+    font-size: 50px
+}
+.japan{
+    color: lightpink;
+}
+
+.places-cards{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+}
+.main_places{
+    text-align: center;
+}
+.photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 60%
+}
+.button{
+    font-weight: 700;
+    background: pink;
+    border-radius:10%;
+    font-weight: 700;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.button:hover { background: darksalmon }
+.button:active {
+  background: darksalmon;
+  box-shadow: 0 3px darksalmon inset;
+}
