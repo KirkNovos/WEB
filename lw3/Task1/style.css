@@ -1,0 +1,61 @@
+.header_logo{
+  text-align: center;
+}
+.container-chat{
+  border:none;
+  background-color:lightgray;
+  width: 700px;
+  height: 300px;
+  padding: 10px;
+  margin: auto;
+  overflow: scroll;
+  border: 1px solid black;
+}
+
+
+::-webkit-scrollbar{
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: yellowgreen;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: darkgreen;
+}
+
+
+#vvod{
+  width: 700px;
+  padding: 10px;
+  margin: auto;
+}
+
+.person1{
+  background-color: yellow;
+  width: 400px;
+  margin-left: 10px;
+  outline: 1px solid black;
+}
+.person2{
+  background-color: white;
+  width: 400px;
+  margin-left: 280px;
+  outline: 1px solid black;
+}
+
+#btn{
+  width: 150px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 270px;
+}
+
+#vd{
+  outline: 1px solid black;
+  width: 700px;
+}
