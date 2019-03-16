@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+<body>
+  <script>
+    /*function pulloutArray(arr=[]){
+
+      var newArr=[];
+      for (var i=0; i<arr.length; i++){
+        if (isNaN(arr[i])){
+          console.log("hui")
+        }else{
+         newArr.push(arr[i]);
+        }
+        if (Array.isArray(arr[i])){
+          var nn=arr[i].concat();         
+          for (var j=0; i<length; i++){
+            if(Number.isInteger(nn[j])){
+              newArr.push(nn[j])
+            }
+          }
+        }
+      }
+      console.log(newArr);
+    }
+    */
+    function pulloutArray(x){
+      var arr=[];
+      for(let element of x.values()){
+        if(Array.isArray(element)){
+          for(let secondElem of element.values()){
+            if (Number.isInteger(secondElem)){
+              arr.push(secondElem);
+            }
+          }
+        }
+        if(Number.isInteger(element)){
+          arr.push(element);
+        }
+      }
+      return(arr);
+    }
+  </script>
+</body>
+
+</html>
