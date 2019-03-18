@@ -4,19 +4,15 @@
 <head>
   <!-- Тег meta для указания кодировки -->
   <meta charset="utf-8">
-  <script src="Task1.js"></script>
 </head>
 
 <body>
 
   <p>Начало документа...</p>
   <script>
-      var user={'id':'1','name':'Aptyp','email':'blackufa@mail.ru'};
-
-
-
+      //var user={'id':'1','name':'Aptyp','email':'blackufa@mail.ru'};
       function getUserProfileFromObj(user){
-          if (typeof(user)!=='object'&& Object.keys(user).length===0){
+    /*      if (typeof(user)!=='object'&& Object.keys(user).length===0){
               return false;
            }else{
                return {
@@ -24,23 +20,23 @@
                  email: user.email
                };
            }
-           
-   /* if (typeof(user) === "object" && user != null) {
-    if ((typeof user['name'] !== "undefined") && (typeof user['email'] !== "undefined")) {
+      }
+      */
+    if (typeof(user) === "object" && user != null) {
+    if ((typeof user['id']!="undefined")&&(typeof user['name'] !== "undefined") && (typeof user['email'] !== "undefined")) {
       return {
         name: user.name,
         email: user.email,
       };
     }
   }
-  return null;
-*/
+  return false;
       }
-    console.log(getUserProfileFromObj({
-    id: 1,
-    name: 'Aptyp',
-    email: 'blackufa@mail.ru'
-  }));
+    //console.log(getUserProfileFromObj({
+    //id: 1,
+    //name: 'Aptyp',
+    //email: 'blackufa@mail.ru'
+  //}));
 </script>
 
 <p>...Конец документа</p>

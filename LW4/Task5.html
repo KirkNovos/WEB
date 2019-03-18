@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <p>Начало документа...</p>
+  <script>
+    var i=0;
+    var j=0;
+      function like(){
+        ++i;
+        //console.log(++i,j);
+        return{
+          like: i,
+          dislike:j,
+        }
+      }
+      function dislike(){
+        j++;
+        //console.log(i,++j);
+        return{
+          like: i,
+          dislike: j,
+        }
+      }
+</script>
+
+<p>...Конец документа</p>
+
+</body>
+
+</html>
